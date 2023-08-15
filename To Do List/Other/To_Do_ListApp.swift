@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import FirebaseCore
+
+
 
 @main
 struct To_Do_ListApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
